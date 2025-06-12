@@ -1,23 +1,24 @@
 import logo from './logo.svg';
 import './App.css';
+import './styles.css';
+
+import ToDoApp from './components/ToDoApp'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className="App mainContainer">
+      <header className='color-primary py-2 text-light'>
+        <h1>TO-DO web app</h1>
       </header>
+
+      <main>
+        <ToDoApp/>
+      </main>
+      
+
+      <footer className='color-primary text-light text-center py-2'>
+        <p>Developed by: Luis Marin</p>
+      </footer>
     </div>
   );
 }
